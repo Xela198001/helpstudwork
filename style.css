@@ -6715,7 +6715,7 @@ body {
   width: 50%;
   margin: 20px 100px auto 100px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 200;
   padding: 40px;
 }
@@ -6734,7 +6734,7 @@ body {
 }
 
 .contaner .header .header-img .header-img-bg .header-text ul li:before {
-  content: '\f56b';
+  content: "\f56b";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   font-size: 14px;
@@ -6758,6 +6758,79 @@ body {
 
 .main .small-block-grid-1 {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.section.content {
+  padding: 5% 10%;
+  background-color: #f9f9f9;
+}
+
+.section.content h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.section.content h2:before {
+  content: none;
+  backgrond: none;
+  text-align: center;
+}
+
+.section.content p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.author {
+  background: #f8f8f8;
+}
+
+.s1858268358.submit-btn {
+  width: 100%;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* border-radius: 24px; */
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: #009ccc;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.s1858268358 .form-field input {
+  border: 1px solid #cccccc;
+  /* border-radius: 28px; */
+  padding: 13px 30px;
+  margin-bottom: 22px;
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  text-align: left;
+  color: #555555;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 
 .footer {
@@ -6767,8 +6840,49 @@ body {
   text-align: center;
   padding: 30px;
   color: #f9f9f9;
-  font-size: 14px;
-  font-family: Panton Bold;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .social-links {
+  width: 100px;
+  height: 40px;
+}
+
+.footer .social-links a {
+  position: relative;
+}
+
+.footer .social-links a.insta:before {
+  content: "\f16d";
+  color: #fff;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-size: 34px;
+  font-weight: 300;
+  position: absolute;
+  top: -15px;
+  left: -30px;
+}
+
+.footer .social-links a.vk:before {
+  content: "\f189";
+  color: #fff;
+  color: #fff;
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-size: 34px;
+  font-weight: 300;
+  position: absolute;
+  top: -15px;
+  left: 10px;
 }
 
 div#zao_order_vertical_short {
@@ -6796,6 +6910,11 @@ div#zao_order_vertical_short {
   height: 400px;
 }
 
+div#zao_reviews_02 {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .section-why-as {
   position: relative;
   background-color: #f9f9f9;
@@ -6804,14 +6923,29 @@ div#zao_order_vertical_short {
 }
 
 .section-why-as .section-why-as__title {
-  font-family: "avantgardegothicc_regular";
   text-align: center;
-  color: #444444;
+  color: #009ccc;
   font-size: 40px;
   font-size: 2.5rem;
   text-transform: none;
   margin-bottom: 54px;
   font-weight: normal;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-why-as .section-why-as__title:before {
+  content: "\f00c";
+  display: inline-block;
+  background: none;
+  height: 2px;
+  margin: 1rem 0;
+  width: 1em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin-right: 20px;
+  color: #000;
 }
 
 .section-why-as__content-block {
@@ -6830,8 +6964,9 @@ div#zao_order_vertical_short {
 }
 
 .section-why-as__content-block .section-why-as__card:nth-child(odd) {
-  background-color: #43ae91;
+  background-color: #47bfe4;
   color: white;
+  width: calc(100% / 3);
 }
 
 .section-why-as__content-block .section-why-as__card:nth-child(odd) .card__title {
@@ -6862,12 +6997,91 @@ div#zao_order_vertical_short {
   display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
+  width: calc(100% / 3);
+}
+
+.section-why-as__card-item-1 h2:before {
+  content: "\f505";
+  display: block;
+  font-size: 3rem;
+  height: 2px;
+  margin: 0 auto 70px 40%;
+  background: none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.section-why-as__card-item-2 h2:before {
+  content: "\f3d1";
+  display: block;
+  font-size: 3rem;
+  height: 2px;
+  margin: 0 auto 70px 40%;
+  background: none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin-right: 20px;
+  color: #000;
+}
+
+.section-why-as__card-item-3 h2:before {
+  content: "\f0c0";
+  display: block;
+  font-size: 3rem;
+  height: 2px;
+  margin: 0 auto 70px 40%;
+  background: none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.section-why-as__card-item-4 h2:before {
+  content: "\f4ff";
+  display: block;
+  font-size: 3rem;
+  height: 2px;
+  margin: 0 auto 70px 40%;
+  background: none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin-right: 20px;
+  color: #000;
+}
+
+.section-why-as__card-item-5 h2:before {
+  content: "\f501";
+  display: block;
+  font-size: 3rem;
+  height: 2px;
+  margin: 0 auto 70px 40%;
+  background: none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.section-why-as__card-item-6 h2:before {
+  content: "\f017";
+  display: block;
+  font-size: 3rem;
+  height: 2px;
+  margin: 0 auto 70px 40%;
+  background: none;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin-right: 20px;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
